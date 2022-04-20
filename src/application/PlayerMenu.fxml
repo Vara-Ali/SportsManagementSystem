@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+   <children>
+      <AnchorPane prefHeight="400.0" prefWidth="396.0" style="-fx-background-color: #ff914c;">
+         <children>
+            <ImageView fitHeight="401.0" fitWidth="804.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/Black%20Minimalist%20Basketball%20Sports%20Festival%20Poster%20(812%20×%20408px)%20(2).png" />
+               </image>
+            </ImageView>
+            <Button layoutX="239.0" layoutY="201.0" mnemonicParsing="false" onAction="#makeDonationFirst" opacity="0.0" prefHeight="37.0" prefWidth="296.0" style="-fx-background-color: #ffff;" text="Make A Donation" textFill="#ff914c" />
+            <Button layoutX="238.0" layoutY="256.0" mnemonicParsing="false" onAction="#proposeDonationForm" opacity="0.01" prefHeight="37.0" prefWidth="296.0" style="-fx-background-color: #ff914d;" text="Propose A Donation" textFill="WHITE" />
+         </children></AnchorPane>
+      <Button layoutX="263.0" layoutY="344.0" mnemonicParsing="false" onAction="#logOut" opacity="0.0" prefHeight="30.0" prefWidth="223.0" style="-fx-background-color: #ffff;" text="Logout" textFill="#ff914c" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Initializer2">
+   <children>
+      <AnchorPane prefHeight="400.0" prefWidth="800.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ff914d" height="61.0" layoutY="170.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="803.0" />
+            <Label layoutX="278.0" layoutY="162.0" prefHeight="77.0" prefWidth="248.0" text="Case Verified Successfully" textFill="WHITE">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <Button fx:id="ok" layoutX="340.0" layoutY="346.0" mnemonicParsing="false" onAction="#loginFailed" prefHeight="25.0" prefWidth="186.0" style="-fx-background-color: ff914d;" text="Okay" textFill="WHITE" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Initializer2">
+   <children>
+      <ListView fx:id="ListCase" layoutX="31.0" layoutY="43.0" prefHeight="306.0" prefWidth="176.0" style="-fx-background-color: #ff914d;" />
+      <Label fx:id="label1" layoutX="251.0" layoutY="43.0" prefHeight="263.0" prefWidth="511.0" style="-fx-font-family: Verdana;" wrapText="true">
+         <effect>
+            <Glow />
+         </effect>
+         <padding>
+            <Insets top="2.0" />
+         </padding>
+         <font>
+            <Font name="Castellar" size="12.0" />
+         </font>
+      </Label>
+      <Button fx:id="DonateNow" layoutX="284.0" layoutY="349.0" mnemonicParsing="false" onAction="#verifyCase" prefHeight="25.0" prefWidth="132.0" style="-fx-background-color: #ff914d;" text="Verify" textFill="WHITE" />
+      <Button layoutX="251.0" layoutY="349.0" mnemonicParsing="false" onAction="#BacktomoderatorMenu" style="-fx-background-color: #ff914d;" text="&lt;" textFill="WHITE" />
+      <Button layoutX="428.0" layoutY="349.0" mnemonicParsing="false" onAction="#delteCase" prefHeight="25.0" prefWidth="132.0" style="-fx-background-color: #ff914d;" text="Delete" textFill="WHITE" />
+   </children>
+</AnchorPane>

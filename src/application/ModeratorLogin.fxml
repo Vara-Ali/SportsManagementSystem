@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+   <children>
+      <Button layoutX="267.0" layoutY="293.0" mnemonicParsing="false" onAction="#tomoderatorMenu" prefHeight="23.0" prefWidth="266.0" style="-fx-background-color: #ff914d;" text="Log In" textFill="WHITE" />
+      <Button layoutX="267.0" layoutY="332.0" mnemonicParsing="false" onAction="#logOut" prefHeight="23.0" prefWidth="266.0" style="-fx-background-color: #ff914d;" text="Cancel" textFill="WHITE" />
+      <Label layoutX="267.0" layoutY="152.0" prefHeight="14.0" prefWidth="78.0" text="Username:" />
+      <Label layoutX="267.0" layoutY="222.0" prefHeight="18.0" prefWidth="78.0" text="Password:" />
+      <TextField fx:id="moderatorUsername" layoutX="266.0" layoutY="172.0" prefHeight="25.0" prefWidth="266.0" />
+      <Label alignment="CENTER" layoutX="-2.0" layoutY="76.0" prefHeight="54.0" prefWidth="800.0" style="-fx-background-color: #ff914d;" text="Welcome Back Moderator" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Papyrus" size="21.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="moderatorPassword" layoutX="267.0" layoutY="248.0" prefHeight="25.0" prefWidth="266.0" />
+   </children>
+</AnchorPane>

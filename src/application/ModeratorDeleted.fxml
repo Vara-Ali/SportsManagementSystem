@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Initializer3">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ff914d" height="83.0" layoutY="159.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="800.0" />
+      <Label layoutX="236.0" layoutY="183.0" text="Moderator deleted successfully" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="ok" layoutX="331.0" layoutY="334.0" mnemonicParsing="false" onAction="#loginFailed" prefHeight="25.0" prefWidth="139.0" style="-fx-background-color: #ff914d;" text="Okay" textFill="WHITE" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+   <children>
+      <TextField fx:id="newModeratorName" layoutX="102.0" layoutY="58.0" />
+      <Label layoutX="102.0" layoutY="29.0" text="Name" />
+      <Label layoutX="107.0" layoutY="108.0" text="Username" />
+      <TextField fx:id="newModeratorUsername" layoutX="102.0" layoutY="138.0" />
+      <Label layoutX="107.0" layoutY="183.0" text="Email" />
+      <TextField fx:id="newModeratorEmail" layoutX="107.0" layoutY="222.0" onKeyPressed="#validateModeratorinfo" />
+      <Label layoutX="109.0" layoutY="267.0" text="Password" />
+      <PasswordField fx:id="newModeratorPassword" layoutX="107.0" layoutY="297.0" />
+      <Button layoutX="95.0" layoutY="349.0" mnemonicParsing="false" onAction="#backtoAdminMenu" style="-fx-background-color: #ff914d;" text="&lt;" textFill="WHITE" />
+      <Button fx:id="addModerator" layoutX="134.0" layoutY="349.0" mnemonicParsing="false" onAction="#moderatorAdditionSuccessful" prefHeight="25.0" prefWidth="123.0" style="-fx-background-color: #ff914d;" text="Add Moderator" textFill="WHITE" />
+   </children>
+</AnchorPane>
