@@ -1,4 +1,7 @@
-module CharityManagementSystem {
+/**
+ *
+ */
+module SportsManagementSystem {
 	requires javafx.controls;
 	requires javafx.fxml;
 	requires javafx.base;

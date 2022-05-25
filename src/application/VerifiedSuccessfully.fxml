@@ -10,13 +10,14 @@
    <children>
       <AnchorPane prefHeight="400.0" prefWidth="800.0">
          <children>
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ff914d" height="61.0" layoutY="170.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="803.0" />
-            <Label layoutX="278.0" layoutY="162.0" prefHeight="77.0" prefWidth="248.0" text="Case Verified Successfully" textFill="WHITE">
+            <Rectangle arcHeight="5.0" arcWidth="5.0" height="32.0" layoutX="337.0" layoutY="343.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="193.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" height="61.0" layoutY="170.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="803.0" />
+            <Label layoutX="252.0" layoutY="162.0" prefHeight="77.0" prefWidth="299.0" text="Equipment Issued Successfully" textFill="WHITE">
                <font>
                   <Font size="22.0" />
                </font>
             </Label>
-            <Button fx:id="ok" layoutX="340.0" layoutY="346.0" mnemonicParsing="false" onAction="#loginFailed" prefHeight="25.0" prefWidth="186.0" style="-fx-background-color: ff914d;" text="Okay" textFill="WHITE" />
+            <Button fx:id="ok" layoutX="340.0" layoutY="346.0" mnemonicParsing="false" onAction="#loginFailed" prefHeight="25.0" prefWidth="186.0" style="-fx-background-color: FFFFFF;" text="Okay" />
          </children>
       </AnchorPane>
    </children>

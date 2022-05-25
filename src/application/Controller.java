@@ -53,7 +53,7 @@ public class Controller implements Initializable {
 	public TextField newModeratorEmail=new TextField();
 	public PasswordField newModeratorPassword=new PasswordField();
 	public TextField caseGoal=new TextField();
-	public TextArea caseDescription=new TextArea();
+	public TextField caseDescription=new TextField();
 	public PasswordField adminPassword=new PasswordField();
 	public TextField donorUsername=new TextField();
 	public PasswordField donorPassword=new PasswordField();
@@ -181,7 +181,7 @@ public class Controller implements Initializable {
 			} else {
 				Stage stage = new Stage();
 				FXMLLoader fxmlLoader = new FXMLLoader(Controller.class.getResource("PlayerLoginFailed.fxml"));
-				Scene scene = new Scene(fxmlLoader.load(), 520, 440);
+				Scene scene = new Scene(fxmlLoader.load(), 800, 400);
 				stage.setTitle("Sports Management System");
 				stage.setScene(scene);
 				stage.show();

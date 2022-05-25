@@ -45,14 +45,14 @@ public class MySQLHandler {
 			con.close();
 	}
 	
-	public void donorDB (String str1,String str2,String str3, String str4) throws SQLException, ClassNotFoundException
+	public void playerDB(String str1, String str2, String str3, String str4) throws SQLException, ClassNotFoundException
 	{
 		//ArrayList<Player>temp=new ArrayList<Player>();
 
 			Class.forName("com.mysql.cj.jdbc.Driver");		
 			Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/testdb","root","1234");
 		    //insertion
-			String sql = "INSERT INTO donor(name,username,email,password) VALUES(?,?,?,?)";
+			String sql = "INSERT INTO player(username,name,email,password) VALUES(?,?,?,?)";
 			PreparedStatement statement = con.prepareStatement(sql);
 			statement.setString(1, str1);
 			statement.setString(2, str2);
@@ -65,12 +65,12 @@ public class MySQLHandler {
 			}
 			//display
 			Statement stmt = con.createStatement();
-			ResultSet rs = stmt.executeQuery("select * from donor");
+			ResultSet rs = stmt.executeQuery("select * from player");
 			while(rs.next())
 			{
 				//System.out.println(rs.getString(1)+ rs.getString(2)+ rs.getString(3)+ rs.getString(4));
-				String name=rs.getString("name");
-				String username=rs.getString("username");
+				String name=rs.getString("username");
+				String username=rs.getString("name");
 				String email=rs.getString("email");
 				String password=rs.getString("password");
 
@@ -121,7 +121,7 @@ public class MySQLHandler {
 
 	}
 	
-	public ArrayList<Player> donorGet () throws SQLException, ClassNotFoundException
+	public ArrayList<Player> playerGet() throws SQLException, ClassNotFoundException
 	{
 		ArrayList<Player>temp=new ArrayList<Player>();
 
@@ -130,12 +130,12 @@ public class MySQLHandler {
 		    
 			//display
 			Statement stmt = con.createStatement();
-			ResultSet rs = stmt.executeQuery("select * from donor");
+			ResultSet rs = stmt.executeQuery("select * from player");
 			while(rs.next())
 			{
 				//System.out.println(rs.getString(1)+ rs.getString(2)+ rs.getString(3)+ rs.getString(4));
-				String name=rs.getString("name");
-				String username=rs.getString("username");
+				String name=rs.getString("username");
+				String username=rs.getString("name");
 				String email=rs.getString("email");
 				String password=rs.getString("password");
 
@@ -196,14 +196,8 @@ public class MySQLHandler {
 				String casename=rs.getString("name");
 				String casedesc=rs.getString("description");
 				int goal=rs.getInt("goal");
-
-
 			}
-		
 			con.close();
-			
-			
-
 	}
 	
 	public void activeCasesDB (String str1,String str2,int int1) throws SQLException, ClassNotFoundException

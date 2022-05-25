@@ -1,12 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
    <children>
-      <Button layoutX="277.0" layoutY="105.0" mnemonicParsing="false" onAction="#toProposedCases" prefHeight="25.0" prefWidth="246.0" style="-fx-background-color: #ff914d;" text="Cases Pending Approval" textFill="WHITE" />
-      <Button layoutX="277.0" layoutY="148.0" mnemonicParsing="false" onAction="#toAddCase" prefHeight="25.0" prefWidth="246.0" style="-fx-background-color: #ff914d;" text="Add a Case" textFill="WHITE" />
-      <Button layoutX="372.0" layoutY="329.0" mnemonicParsing="false" onAction="#logOut" style="-fx-background-color: #ff914d;" text="Logout" textFill="WHITE" />
+      <ImageView fitHeight="403.0" fitWidth="801.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/Black%20Minimalist%20Basketball%20Sports%20Festival%20Instagram%20Post%20(800%20×%20400px)%20(6).png" />
+         </image>
+      </ImageView>
+      <Button layoutX="290.0" layoutY="142.0" mnemonicParsing="false" onAction="#toProposedCases" opacity="0.0" prefHeight="49.0" prefWidth="221.0" style="-fx-background-color: #ff914d;" text="Cases Pending Approval" textFill="WHITE" />
+      <Button layoutX="291.0" layoutY="209.0" mnemonicParsing="false" onAction="#toAddCase" opacity="0.0" prefHeight="49.0" prefWidth="221.0" style="-fx-background-color: #ff914d;" text="Add a Case" textFill="WHITE" />
+      <Button layoutX="364.0" layoutY="358.0" mnemonicParsing="false" onAction="#logOut" opacity="0.0" prefHeight="8.0" prefWidth="74.0" style="-fx-background-color: #ff914d;" text="Logout" textFill="WHITE" />
    </children>
 </AnchorPane>

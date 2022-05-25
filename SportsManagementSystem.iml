@@ -152,11 +152,9 @@
         </SOURCES>
       </library>
     </orderEntry>
-    <orderEntry type="library" name="javafx-swt2" level="project" />
     <orderEntry type="library" name="antlr-2.7.71" level="application" />
     <orderEntry type="library" name="ojdbc111" level="application" />
     <orderEntry type="library" name="ojdbc11" level="application" />
-    <orderEntry type="library" name="javafx-swt1" level="project" />
     <orderEntry type="library" name="javafx-swt2" level="application" />
   </component>
 </module>

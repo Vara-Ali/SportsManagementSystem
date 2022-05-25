@@ -22,7 +22,7 @@ public class Account {
 	public void signUp(String name, String usrName, String email, String pass) throws ClassNotFoundException, SQLException {
 		donors = new ArrayList<Player>();
 		m=new MySQLHandler();
-		m.donorDB(name, usrName, email, pass);
+		m.playerDB(name, usrName, email, pass);
 		donors.add(new Player(name,usrName,email,pass));
 		for(int i=0;i<donors.size();i++) {
 			System.out.println("Name "+donors.get(i).getFirstname()+" Username "+donors.get(i).getUsername()+" email"+donors.get(i).getEmail()+" password"+donors.get(i).getPassword());
@@ -47,8 +47,8 @@ public class Account {
 	public void getData() throws ClassNotFoundException, SQLException
 	{
 		m=new MySQLHandler();
-		donors=m.donorGet();
-		Collections.copy(donors,m.donorGet());
+		donors=m.playerGet();
+		Collections.copy(donors,m.playerGet());
 
 		for(int i=0;i<donors.size();i++) {
 			System.out.println("Name "+donors.get(i).getFirstname()+" Username "+donors.get(i).getUsername()+" email"+donors.get(i).getEmail()+" password"+donors.get(i).getPassword());
@@ -59,8 +59,8 @@ public class Account {
 	public Boolean signIn(String usrName, String pass) throws ClassNotFoundException, SQLException {
 
 		m=new MySQLHandler();
-		donors=m.donorGet();
-		Collections.copy(donors,m.donorGet());
+		donors=m.playerGet();
+		Collections.copy(donors,m.playerGet());
 		for(int i=0;i<donors.size();i++)
 		{	//size ka function to get arraylist ka size
 				

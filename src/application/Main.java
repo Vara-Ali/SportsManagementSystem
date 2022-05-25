@@ -18,7 +18,7 @@ public class Main extends Application {
         Scene scene = new Scene(fxmlLoader.load(), 800, 400);
         arg0.setScene(scene);
         arg0.show();
-		arg0.setTitle("Charity Management System");
+		arg0.setTitle("Sports Management System");
 		//MySQLHandler m = new MySQLHandler();
 		//m.deleteaRow("Surgery");
 

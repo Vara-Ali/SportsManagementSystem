@@ -8,8 +8,8 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
    <children>
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ff914d" height="55.0" layoutY="159.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="825.0" />
-      <Label layoutX="316.0" layoutY="174.0" text="Case added successfully" textFill="WHITE">
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="55.0" layoutY="159.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="825.0" />
+      <Label layoutX="316.0" layoutY="174.0" text="Requirements added successfully" textFill="WHITE">
          <font>
             <Font size="16.0" />
          </font>
